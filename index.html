@@ -5,9 +5,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <main class="main">
+        <section class="container">
+            <div class="wrapper">
+                <div class="container-header">
+                    <h1>CSS container queries</h1>
+                    <p>
+                        Container queries enable you to apply styles to an element based on the size of the element's
+                        container. If, for example, a container has less space available in the surrounding context, you
+                        can
+                        hide certain elements or use smaller fonts.
+                    </p>
+
+                    <p>
+                        Container queries are an alternative to media queries, which apply styles to elements based on
+                        viewport size or other device characteristics.
+                    </p>
+
+                    <p>Container queries have the same syntax rules and logical operators as media queries.</p>
+
+                    <p>There are two types of container queries: container size queries and container style queries:
+                        <br>
+                        1. Container size queries (including orientation and aspect-ratio)
+                        2. Container style queries
+                    </p>
+
+                    <div class="container-code">
+                        <pre><code>
+.parent-element {
+    container-type: inline-size | size | normal;\
+    container-name: name_for_container
+    container: name_for_container / inline-size | size | normal; //shorthand
+    container-name: name_for_container1 name_for_container2;
+}
+    </code></pre>
+                    </div>
+                    <div class="container-code">
+                        <pre><code>
+@container &lt;container-condition&gt;# {
+    /* &lt;stylesheet&gt; */
+}
+
+@container (10em &lt;= width &lt;= 20em) {
+    /* styles */
+  }
+    </code></pre>
+                    </div>
+
+                    <h2>
+                        Container query length units
+                    </h2>
+                    <p>
+
+                        When applying styles to a container using container queries, you can use container query length
+                        units. These units specify a length relative to the dimensions of a query container. Components
+                        that use units of length relative to their container are more flexible to use in different
+                        containers without having to recalculate concrete length values.
+
+                        <br>
+                        The container query length units are:
+                    </p>
+
+                    <ul>
+                        <li>cqw: 1% of a query container's width
+                        </li>
+                        <li>
+                            cqh: 1% of a query container's height
+                        </li>
+                        <li>
+                            cqi: 1% of a query container's inline size
+                        </li>
+                        <li>
+                            cqb: 1% of a query container's block size
+                        </li>
+                        <li>
+                            cqmin: The smaller value of either cqi or cqb
+                        </li>
+                        <li>cqmax: The larger value of either cqi or cqb</li>
+                    </ul>
+
+
+
+                    <p>
+                        <a href="https://codepen.io/shadeed/pen/ExZEEjZ?editors=1100">Code Pen Example</a>
+                        <br>
+                        <a href="https://codepen.io/shadeed/pen/VwPQORy?editors=1100">Code Pen Example</a>
+                        <br>
+                        <a href="https://codepen.io/hubpork/pen/WNVzopm">Code Pen Example</a>
+                        <br>
+                        <a href="https://codepen.io/mfort/pen/mdagjOp">Code Pen Example</a>
+                        <br>
+                        <a href="https://codepen.io/martine-dowden/pen/OJBzPVv?editors=0110">Code Pen Example</a>
+                    </p>
+
+
+                </div>
+                <div class="container-image">
+                    <div role="img">
+                        <img src="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries/container-query.svg"
+                            alt="" srcset="">
+                    </div>
+                    <div role="img">
+                        <img src="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries/container-query.svg"
+                            alt="" srcset="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <aside class="sidebar">
+            <article>
+                <div role="img" class="article-image">
+                    <img src="https://picsum.photos/150" alt="Fake Image">
+                </div>
+                <div role="contentinfo" class="article-content">
+                    <h2>Container Queries</h2>
+                    <p>Container queries are a new feature that allow developers to style elements based on the size of
+                        a
+                        containing element rather than the size of the viewport. This allows for more flexible and
+                        maintainable responsive designs.</p>
+                </div>
+            </article>
+
+            <article>
+                <div role="img" class="article-image">
+                    <img src="https://picsum.photos/150" alt="Fake Image">
+                </div>
+                <div role="contentinfo" class="article-content">
+                    <h2>Container Queries</h2>
+                    <p>Container queries are a new feature that allow developers to style elements based on the size of
+                        a
+                        containing element rather than the size of the viewport. This allows for more flexible and
+                        maintainable responsive designs.</p>
+                </div>
+            </article>
+
+            <article>
+                <div role="img" class="article-image">
+                    <img src="https://picsum.photos/150" alt="Fake Image">
+                </div>
+                <div role="contentinfo" class="article-content">
+                    <h2>Container Queries</h2>
+                    <p>Container queries are a new feature that allow developers to style elements based on the size of
+                        a
+                        containing element rather than the size of the viewport. This allows for more flexible and
+                        maintainable responsive designs.</p>
+                </div>
+            </article>
+
+            <article>
+                <div role="img" class="article-image">
+                    <img src="https://picsum.photos/150" alt="Fake Image">
+                </div>
+                <div role="contentinfo" class="article-content">
+                    <h2>Container Queries</h2>
+                    <p>Container queries are a new feature that allow developers to style elements based on the size of
+                        a
+                        containing element rather than the size of the viewport. This allows for more flexible and
+                        maintainable responsive designs.</p>
+                </div>
+            </article>
+
+        </aside>
+    </main>
 
 </body>
 
